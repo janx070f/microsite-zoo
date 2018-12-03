@@ -1,0 +1,91 @@
+body {
+  background-color: blue;
+}
+
+
+
+/*--- NAVIGATION ---*/
+/*This navigation is made by: https://github.com/academind and modified by: Jan Andreassen*/
+
+/*hamburger icon*/
+.hamburger {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger__button {
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .hamburger__button:focus {
+    outline: none;
+  }
+
+  .hamburger__button-bar {
+    width: 100%;
+    height: 0.2rem;
+    background: white;
+    display: block;
+    margin: 0.6rem 0;
+  }
+
+/*desktop*/
+.desktop__navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+.desktop__navigation a {
+    text-decoration: none;
+    color: white;
+}
+.desktop__navigation div {
+    padding-left: 20px;
+    display: none;
+}
+/*Mobile navigation*/
+.mobile {
+    position: fixed;
+    top: 0;
+    background: rgba(90, 90, 90, 0.9);
+    width: 80vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateX(-100vw);
+    transition: transform 500ms ease-out;
+}
+
+.mobile__items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+}
+.mobile__items li a {
+     text-decoration: none;
+     color: white;
+}
+
+.open {
+    display: flex;
+    transform: translateX(0);
+}
+
+@media (min-width: 40rem) {
+    .hamburger__button {
+        display: none;
+    }
+
+    .desktop__navigation div {
+        display: block;
+    }
+}
+/*--- NAVIGATION END ---*/
