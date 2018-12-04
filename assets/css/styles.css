@@ -24,7 +24,7 @@ body {
 .hero h1 {
   /* color: #e28e04; */
   color: #ffffff;
-  font-family: "AlianzaSlab300";
+  font-family: "AlianzaSlab300", Verdana, Geneva, "DejaVu Sans", sans-serif;
   /* position: absolute; */
   position: absolute;
   left: 50%;
