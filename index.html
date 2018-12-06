@@ -6,7 +6,28 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <meta charset="utf-8" />
+  <script>
+    // readMore Based on W3 School, and modified by: Jan Andreassen
+    function readMore() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
+
+
   <style>
     .mySlides {
       display: none;
@@ -28,46 +49,77 @@
     <nav class="desktop">
       <div class="desktop__navigation">
         <div>
-          <a href="#">Læs mere</a>
+          <a href="https://aalborgzoo.dk/aalborg-zoos-naturbevaringsfond.aspx" target="_blank"><i class="fas fa-book-open"> Læs Mere</i></a>
+
         </div>
         <div>
-          <a href="javascript:window.close();">Luk Siden</a>
+          <a href="https://aalborgzoo.dk" target="_self"><i class="fas fa-times-circle"> Luk Siden</i></a>
         </div>
       </div>
     </nav>
   </header>
   <nav class="mobile">
     <ul class="mobile__items">
-      <li class="mobile__item"><a href="#">Læs mere</a></li>
-      <li class="mobile__item"> <a href="javascript:window.close();">Luk Siden</a></li>
+      <li class="mobile__item"><a href="https://aalborgzoo.dk/aalborg-zoos-naturbevaringsfond.aspx" target="_blank">Læs mere</a></li>
+      <li class="mobile__item"> <a href="https://aalborgzoo.dk" target="_self">Luk Siden</a></li>
+      <!-- <li class="mobile__item"> <a href="javascript:window.close();">Luk Siden</a></li> -->
     </ul>
   </nav>
   <!--NAVIGATION END-->
-
-  <div class="hero">
-    <div class="slide1">
-    <h1>Aalborg Zoo Conservation Foundation</h1>
-      <img class="mySlides" src="assets/images/IMG_2801.jpg" alt="IMG2801" style="width:100%">
+  <div class="wrapper">
+    <div class="hero">
+      <div class="slide1">
+        <h1>Aalborg Zoo Conservation Foundation</h1>
+        <img class="mySlides" src="assets/images/IMG_2801.jpg" alt="IMG2801" style="width:100%">
       </div>
-      <div class="slide2">
-    <h1>Aalborg Zoo Conservation Foundation</h1>
-      <img class="mySlides" src="assets/images/Elefanter meet.jpg" alt="Elefanter" style="width:100%">
+      <!-- <div class="slide2">
+        <h1>Aalborg Zoo Conservation Foundation</h1>
+        <img class="mySlides" src="assets/images/Elefanter meet.jpg" alt="Elefanter" style="width:100%">
       </div>
       <div class="slide3">
-    <h1>Aalborg Zoo Conservation Foundation</h1>
-      <img class="mySlides" src="assets/images/sommer2018.jpg" alt="Sommer2018" style="width:100%">
+        <h1>Aalborg Zoo Conservation Foundation</h1>
+        <img class="mySlides" src="assets/images/sommer2018.jpg" alt="Sommer2018" style="width:100%">
+      </div> -->
+    </div>
+    <div class="row">
+      <div class="content-jul">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span>
+<br></br>
+          <span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed
+            nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+        <button onclick="readMore()" id="myBtn">Read more</button>
       </div>
-  </div>
+      <div class="images-jul">
+        <img src="assets/images/black4.jpg" alt="image1">
+        <img src="assets/images/black4.jpg" alt="image2">
+        <img src="assets/images/black4.jpg" alt="image3">
+        <img src="assets/images/black4.jpg" alt="image4">
+        <!-- </div> -->
 
-  <!-- <div class="hero">
-  <h1>Aalborg Zoo Conservation Foundation</h1>
-</div> -->
-  <div class="content">
+      </div>
+      <div class="row">
+        <div class="content-mamba">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quaerat voluptate ipsam nam possimus molestiae ratione exercitationem voluptatibus, modi deleniti.</p>
+        </div>
+        <div class="images-mamba">
 
-  </div>
-  <div class="footer">
+        </div>
 
-  </div>
+      </div>
+      <div class="row">
+        <div class="content-azcf">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tempore, consectetur nam saepe possimus ratione quaerat sit ipsum enim! Nobis?</p>
+        </div>
+        <div class="images-azcf">
+
+        </div>
+
+      </div>
+    </div>
+    <div class="footer">
+
+    </div>
 </body>
 
 <script src="assets/js/main.js"></script>
