@@ -39,7 +39,7 @@ body {
   position: absolute;
   left: 50%;
   top: 25%;
-  /* transform: translate(-50%, -25%); */
+  transform: translate(-50%, -25%);
   /* transform: translateX(-50%); */
   /* z-index: -99; */
 }
@@ -50,6 +50,7 @@ body {
 }
 
 .row {
+
   /* height: 200px;
   width: 100%; */
   /* margin-top: 2vh; */
@@ -58,30 +59,42 @@ body {
 .content-jul {
   background-color: #cdcdcd;
   /* height: 200px; */
-  max-width: 40%;
+margin-left: 0.8rem;
 }
 .images-jul{
-  float: right;
-  margin: 0.4rem;
+
+  /* margin: 0.4rem; */
 }
 .images-jul img {
-  max-width: 20%;
+margin: 0.4rem;
+  /* max-width: 50%; */
   height: auto;
   }
 
 .content-mamba {
   background-color: #bdbdbd;
+  margin-left: 0.8rem;
 }
 
-.images-mamba {}
+.images-mamba {
+  margin: 0.4rem;
+    height: auto;
+}
 
 .content-azcf {
   background-color: #888888;
   color: white;
+  margin-left: 0.8rem;
 }
 
-.images-azcf {}
-
+.images-azcf {
+  margin: 0.4rem;
+    height: auto;
+}
+footer{
+  height: 150px;
+  background-color: #e28e04;
+}
 /*--- NAVIGATION ---*/
 /*This navigation is made by: https://github.com/academind and modified by: Jan Andreassen*/
 /*hamburger icon*/
@@ -173,40 +186,62 @@ body {
 }
 
 /*--- NAVIGATION END ---*/
+
+ @media only screen and (min-width: 768px) {
+   .content-jul {
+     width: 50%;
+     /* height: 200px; */
+
+   }
+   .images-jul{
+     display: flex;
+     margin: 0.4rem;
+   }
+   .images-jul img {
+     flex: auto;
+     max-width: 50%;
+     height: auto;
+     }
+ }
+@media only screen and (min-width: 980px) {
+
+}
+
+
 /*--- GRID DEFINITION ---*/
-.header {
+/* .header {
   grid-area: header;
 }
 .hero {
   grid-area: hero;
 }
-/* JUL */
+
 .content-jul {
   grid-area: content-jul;
 }
 .images-jul {
   grid-area: images-jul;
 }
-/* MAMBA */
+
 .content-mamba {
   grid-area: content-mamba;
 }
 .images-mamba {
   grid-area: images-mamba;
 }
-/* AZCF */
+
 .content-azcf {
   grid-area: content-azcf;
 }
 .images-azcf {
   grid-area: images-azcf;
 }
-/* HEADER */
+
 
 .footer {
   grid-area: footer;
 }
-/*
+*/
 /*--- GRID AREAS MEDIAQURIES ---*/
 /* .wrapper {
   display: grid;
